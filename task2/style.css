@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+:root {
+    --yellow: rgba(252, 97, 97, 0.89);
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .3s linear;
+}
+
+*::selection {
+    background: var(--yellow);
+    color: #333;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+html::-webkit-scrollbar {
+    width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #222;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+}
+
+body {
+    background: white;
+    color: black;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+section {
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.btn {
+    padding: .7rem 3rem;
+    background: blueviolet;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 5px;
+}
+
+.btn i {
+    padding: 0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover {
+    color: red;
+}
+
+.btn1 {
+    border: 1px solid rgb(233, 37, 37);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 0.7rem 1rem;
+}
+
+.btn1:hover {
+    background-color: black;
+    color: white;
+}
+
+.heading {
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid #fff4;
+}
+
+.heading span {
+    color: var(--yellow);
+}
+
+
+/* navbar */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    border-radius: 20px;
+}
+
+header .container .name {
+    font-size: 3.5rem;
+    text-shadow: 2px 0px 6px rgb(117, 117, 117);
+}
+
+header .container .dev {
+    font-size: 2rem;
+    text-shadow: 2px 0px 6px rgb(117, 117, 117);
+}
+
+header .bar {
+    width: 100%;
+}
+
+header .bar ul {
+    list-style: none;
+    padding: 1rem 3rem;
+}
+
+header .bar ul li a {
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background-color: blueviolet;
+    color: black;
+    font-size: 2rem;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+header .bar ul li a:hover {
+    color: red;
+}
+
+
+/* Menu */
+
+#menu {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: rgb(0, 0, 0);
+    color: rgb(247, 95, 95);
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+
+/* Home */
+
+.home {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+    border: 2px solid rgb(199, 199, 199);
+    border-radius: 20px;
+    background-image: url('./img/bg.jpg');
+    background-repeat: no-repeat;
+
+}
+
+
+.home h3 {
+    font-size: 2.5rem;
+}
+
+.home h1 {
+    font-size: 5rem;
+}
+
+.home h1 span {
+    color: var(--yellow);
+}
+
+.home p {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+
+/* About */
+
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.about .row .info {
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+
+.about .row .info h3 {
+    font-size: 2rem;
+    color: var(--yellow);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info h3 span {
+    color: rgb(163, 162, 162);
+    padding: 0 .5rem;
+}
+
+.about .row .counter {
+    flex: 1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .row .counter .box img {
+    width: 35rem;
+    height: 37rem;
+    text-align: center;
+    margin: 2rem;
+    border-radius: 16px;
+    box-shadow: 7px 7px 7px grey;
+}
+
+
+/* Education */
+
+.education {
+    border: 2px solid rgb(199, 199, 199);
+    border-radius: 20px;
+}
+
+.education .container3 {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 4rem;
+}
+
+.education .container3 .box {
+    width: 40rem;
+    margin: 4rem 4rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+
+.education .container3 .box span {
+    font-size: 1.3rem;
+    background: #222;
+    color: #fff;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+}
+
+.education .container3 .box h3 {
+    font-size: 2rem;
+    padding-top: 1.5rem;
+}
+
+.education .container3 .box p {
+    font-size: 1.4rem;
+    color: rgb(163, 162, 162);
+    padding: 1rem 0;
+}
+
+.education .container3 .box i {
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--yellow);
+}
+
+
+/* Skills */
+
+.skills .container4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding: 2rem 5rem;
+}
+
+.skills .container4 .box {
+    position: relative;
+    width: 10rem;
+    margin: 4rem 1rem;
+    text-align: center;
+    font-size: 8em;
+}
+
+.skills .container5 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding: 2rem 15rem;
+    border: 1px solid grey;
+}
+
+.skills .container5 .box1 {
+    position: relative;
+    width: 13rem;
+    margin: 4rem 2rem;
+    text-align: center;
+}
+
+.skills .container5 .box1 a {
+    text-decoration: none;
+    color: #222;
+}
+
+.skills .container5 .box1 a h3 {
+    color: rgb(163, 162, 162);
+    font-size: 30px;
+}
+
+.skills .container5 .box1 a h3:hover {
+    color: rgba(252, 97, 97, 0.89);
+}
+
+
+/* Contact */
+
+.contact {
+    border: 2px solid rgb(199, 199, 199);
+    border-radius: 20px;
+}
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content {
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #3333;
+    color: #fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+.contact .row form .box::placeholder {
+    text-transform: capitalize;
+}
+
+.contact .row form .message {
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .content .info h3 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(163, 162, 162);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.contact .row .contect .info h3 a {
+    color: rgb(163, 162, 162);
+}
+
+.contact .row .content .info h3 i {
+    padding-right: 1rem;
+    color: var(--yellow);
+}
+
+.top {
+    position: fixed;
+    bottom: 7.5rem;
+    right: 2rem;
+    z-index: 100;
+    display: none;
+}
+
+
+/* media queries  */
+
+@media (max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+    .home {
+        padding: 1rem 4rem;
+    }
+}
+
+@media (max-width:991px) {
+    header {
+        left: -120%;
+    }
+    #menu {
+        display: block;
+    }
+    header.toggle {
+        left: 0%;
+    }
+    body {
+        padding: 0;
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width:400px) {
+    header {
+        width: 100vw;
+    }
+    .heading {
+        margin: 0 3rem;
+    }
+    .about .row .counter .box {
+        width: 100%;
+    }
+    .education .box-container .box {
+        width: 100%;
+    }
+    .portfolio .box-container .box {
+        width: 100%;
+    }
+    .contact .row form {
+        margin: 3rem 0;
+    }
+}
